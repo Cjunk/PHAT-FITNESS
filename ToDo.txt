@@ -24,6 +24,9 @@ test API server
 
 
 ----
+Maintain consistency
+Comment all 
+enforce typecasting
 Responsive.
 Accessable
 await axios
