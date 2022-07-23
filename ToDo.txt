@@ -1,0 +1,20 @@
+Buy online phitness photos (Logo, GIf, 2 promotional photos)
+create TODO list  https://trello.com/b/riHecIkd/welcome-board
+Design landing layout (not logged in)
+Decide application functions (whats is the application for)
+design application logic
+design database
+upload dummy data
+create testing with Jest
+
+build API server
+test API server
+
+
+----
+Responsive.
+Accessable
+await axios
+material ui
+DONT OVER LOAD API
+
