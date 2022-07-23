@@ -24,6 +24,8 @@ test API server
 
 
 ----
+Build README.md as I go
+
 Maintain consistency
 Comment all 
 enforce typecasting
