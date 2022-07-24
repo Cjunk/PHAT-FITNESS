@@ -1,15 +1,17 @@
 Buy online phitness photos (Logo, GIf, 2 promotional photos)
-Clean vscode IDE for Development
-remove unwanted extensions
-decide folder structure
-create TODO list  https://trello.com/b/riHecIkd/welcome-board
-Design landing layout (not logged in)
-Decide application functions (whats is the application for)
-design application logic
-design database
-upload dummy data to database
-initialise HEROKU and push .
-Ensure it works clean on HEROKU.
+DONE Clean vscode IDE for Development
+DONE remove unwanted extensions
+DONE decide folder structure
+DONE initialise HEROKU and push
+DONE Ensure it works clean on HEROKU.
+
+
+TODO: create TODO list  https://trello.com/b/riHecIkd/welcome-board
+TODO: Design landing layout (not logged in)
+TODO: Decide application functions (whats is the application for)
+TODO: design application logic
+TODO: design database
+TODO: upload dummy data to database
 
 create testing with Jest (client and server)
    mock API
@@ -17,8 +19,6 @@ create testing with Jest (client and server)
    js functions
 Implement Typescript....and practise with REACT (re watch GA video)
 create types / interfactes
-
-
 build API server
 test API server
 
