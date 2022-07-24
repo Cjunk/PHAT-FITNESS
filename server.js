@@ -9,7 +9,7 @@ const cors = require("cors");
 // ********************************************************************************************************************
 // CONSTANTS
 const appSecretKey = process.env.EXPRESS_SESSION_SECRET_KEY;
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.SERVER_PORT || 3001;
 const app = express();
 const SERVER_COMMS_TAB_SPACING = 10;
 let API_CALLS = 0;
