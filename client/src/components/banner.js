@@ -11,10 +11,10 @@ class Banner extends Component {
   render() {
       return (
         <div>
-          <header className="App-header">
+          <nav className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
             <h1 className="App-title">PHAT_FITNESS</h1>
-          </header>
+          </nav>
         </div>
       );
   }
