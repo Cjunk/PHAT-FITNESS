@@ -1,0 +1,18 @@
+THIS IS THE DATABASE CHEAT SHEET: [https://postgrescheatsheet.com/#/databases]
+Starting the service
+service postgresql start
+
+SERVICE RESTART
+service postgresql RESTART
+
+starting postgresql
+psql
+
+DELETING A DATABASE
+DROP DATABASE <database name>;
+
+CREATING A NEW DATABASE
+CREATE DATABASE <database name>;
+
+CONNECTING TO DATABASE
+\c phat_fitness

@@ -1,0 +1,34 @@
+// To get Chrome to work without CORS.
+chrome.exe --user-data-dir="C://Chrome dev session" --disable-web-security
+
+to install all dependencies
+npm i
+
+
+npm init --yes
+npm install express --save
+npm install axios
+
+"npm install" if  I node_modules missing
+
+npm install nodemon --save-dev     : debug is posibble. live update
+
+
+package.josn
+  "scripts": {
+    "start": "./node_modules/nodemon/bin/nodemon.js index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+
+# Start server monitor for changes
+  npx nodemon app.js
+
+
+
+HEROKU
+using https://docs.forestadmin.com/documentation/how-tos/databases/populate-a-postgresql-database-on-heroku
+https://data.heroku.com/datastores/d67e6edd-7758-4bf7-b13b-ae213219a708#
+
+heroku pg:psql
+heroku pg:psql <the database>>
