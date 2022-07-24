@@ -1,5 +1,5 @@
 -- psql scavenger_hunt < schema.sql
-DROP TABLE IF EXISTS challenges,users,"session";
+DROP TABLE IF EXISTS users,"session";
 CREATE TABLE challenges (
     id SERIAL PRIMARY KEY,
     theTitle varchar(50),

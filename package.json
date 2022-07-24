@@ -9,7 +9,7 @@
     "server": "nodemon ./server/server.js",
     "client": "npm start --prefix ./client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "INIT_DATABASE_ONLY": "psql scavenger_hunt < 'server/db/schema.sql'",
+    "INIT_DATABASE_ONLY": "psql phat_fitness < 'server/db/schema.sql'",
     "START_SERVER_START_APPLICATION": "service postgresql start && npx nodemon server/app.js",
     "npx monitor": "npx nodemon server/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",

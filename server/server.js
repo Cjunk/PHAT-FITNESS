@@ -19,7 +19,7 @@ let HIDDEN_API_CALLS = 0;
 //  FIXME: Change these for any other application moving forward
 // const challengesController = require("./controllers/challenges"); //  \
 // const usersController = require("./controllers/users"); //    >  These are application specific
-// const sessionController = require("./controllers/sessions"); //  /
+const sessionController = require("./controllers/sessions"); //  /
 
 // ********************************************************************************************************************
 // SET UP THE APP
@@ -39,10 +39,10 @@ app.use("/", (req, res, next) => {
   ) {
     // console.log(`PARAMS 2: ${req.client.on}`);
 
-    console.log("*************************************************************");
+    console.log("*****************************************************");
     console.log("API CALLS TO SERVER = ", ++API_CALLS, "HIDDEN API CALLS TO SERVER = ", HIDDEN_API_CALLS);
     console.log(
-      "**************************************************************************************************************************"
+      "*******************************************************************"
     );
     console.log(`* SERVER COMMUNICATION on ${new Date()} `);
     console.log(
@@ -57,7 +57,7 @@ app.use("/", (req, res, next) => {
     );
     console.log("* cookie = ", req.headers.cookie);
     console.log(
-      "**************************************************************************************************************************"
+      "*********************************************************"
     );
   } else {
     HIDDEN_API_CALLS++;
@@ -84,17 +84,25 @@ app.use(
     }),
   })
 );
+app.use("/api/", sessionController);
+// app.get("/api/customers", cors(), (req, res) => {
+//   const customers = [
+//     { id: 1, firstName: "John", lastName: "Doe" },
+//     { id: 2, firstName: "Jericho", lastName: "Sharman" },
+//     { id: 3, firstName: "Rima", lastName: "Masri" },
+//   ];
 
-
-app.get("/api/customers", cors(), (req, res) => {
-  const customers = [
-    { id: 1, firstName: "John", lastName: "Doe" },
-    { id: 2, firstName: "Jericho", lastName: "Sharman" },
-    { id: 3, firstName: "Rima", lastName: "Masri" },
-  ];
-
-  res.json(customers);
-});
-
-console.log(`Server running on port ${port}`);
-app.listen(port);
+//   res.json(customers);
+// });
+// ********************************************************************************************************************
+// DEVELOPER comms
+if (process.env.DATABASE) {
+  app.listen(PORT, () => {
+    console.log(`Listening on http://localhost:${PORT}`);
+  });
+  console.log(`DATABASE ONLINE: ${process.env.DATABASE}`);
+} else {
+  console.log(
+    "No Database has been setup. Go to the .env file and place the database name"
+  );
+}
