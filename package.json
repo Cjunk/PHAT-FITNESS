@@ -33,6 +33,7 @@
     "express-session": "^1.17.3",
     "pg": "^8.7.3",
     "postgres": "^3.2.4",
+    "remote": "^0.2.6",
     "yarn": "^1.22.19"
   },
   "repository": {
