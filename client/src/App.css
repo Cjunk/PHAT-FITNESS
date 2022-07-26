@@ -1,13 +1,8 @@
-.App {
+* {
   text-align: center;
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat Alternates", sans-serif; */
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-
