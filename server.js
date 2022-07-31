@@ -17,7 +17,7 @@ let HIDDEN_API_CALLS = 0;
 
 //  FIXME: Change these for any other application moving forward
 // const challengesController = require("./controllers/challenges"); //  \
-// const usersController = require("./controllers/users"); //    >  These are application specific
+const usersController = require("./server/controllers/users"); //    >  These are application specific
 const sessionController = require("./server/controllers/sessions"); //  /
 
 // ********************************************************************************************************************
@@ -77,6 +77,7 @@ app.use(
   })
 );
 app.use("/api/", sessionController);
+app.use("/api/users/", usersController);
 app.get("/api/customers", cors(), (req, res) => {
   const customers = [
     { id: 1, firstName: "John", lastName: "Doe" },
