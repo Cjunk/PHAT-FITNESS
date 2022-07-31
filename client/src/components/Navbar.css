@@ -48,9 +48,7 @@
   margin-left: 10px;
 }
 @media screen and (max-width:960px){
-    body {
-        background-color:lightblue;
-    }
+
     .NavbarItems {
         position: relative;
     }

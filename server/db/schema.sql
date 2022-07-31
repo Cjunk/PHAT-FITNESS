@@ -1,15 +1,24 @@
 -- psql scavenger_hunt < schema.sql
 DROP TABLE IF EXISTS users,"session";
 CREATE TABLE challenges (
-    id SERIAL PRIMARY KEY,
+    
     theTitle varchar(50),
     theDescription TEXT,
-    theLocation VARCHAR(50)
+    theLocation VARCHAR(50),
+    userrating number
 );
 CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    memberstatus number,
     email varchar(50) PRIMARY KEY,
     fname varchar(50),
-    password_hash varchar(100)
+    lname varchar(50),
+    participationscore number,
+    password_hash varchar(100),
+    listofevents number
+    datejoined number,
+    moneypaids number
+    
 );
 
 -- INSERT INTO challenges (theTitle,theDescription,theLocation) VALUES('Human Harbour Bridge','Make a human bridge and take a photo','Sydney');

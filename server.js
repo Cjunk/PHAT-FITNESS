@@ -79,7 +79,7 @@ app.use(
 app.use("/api/", sessionController);
 app.get("/api/customers", cors(), (req, res) => {
   const customers = [
-    { id: 1, firstName: "John", lastName: "Does" },
+    { id: 1, firstName: "John", lastName: "Doe" },
     { id: 2, firstName: "Jericho", lastName: "Sharman" },
     { id: 3, firstName: "Rima", lastName: "Masri" },
   ];
