@@ -61,7 +61,7 @@ app.use((err, req, res, next) => {
   // 4 parameters = error handeler
   console.log(`I am ERROR middlewear ${new Date()} ${req.method} ${req.path}`);
   console.log(err);
-  res.status(500).json({ message: "Unknown SERVER/INSERT error occurred" });
+  res.status(501).json({ message: "Unknown SERVER/INSERT error occurred" });
   next();
 });
 app.use(
@@ -80,7 +80,7 @@ app.use("/api/", sessionController);
 app.use("/api/users/", usersController);
 app.get("/api/customers", cors(), (req, res) => {
   const customers = [
-    { id: 1, firstName: "John", lastName: "Doe" },
+    { id: 1, firstName: "John", lastName: "Dose" },
     { id: 2, firstName: "Jericho", lastName: "Sharman" },
     { id: 3, firstName: "Rima", lastName: "Masri" },
   ];
